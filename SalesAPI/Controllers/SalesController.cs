@@ -37,5 +37,13 @@ namespace SalesAPI.WebApi.Controllers
 
             return Ok(saleResult);
         }
+
+        [HttpPut]
+        public IActionResult UpdateStatusSale(string saleID, SaleStatus newStatusSale)
+        {           
+            Sale saleResult = _saleService.UpdateStatusSale(saleID, newStatusSale);
+
+            return Ok(saleResult);
+        }
     }
 }

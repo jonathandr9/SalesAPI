@@ -6,5 +6,6 @@ namespace SalesApi.Domain.Adapters
     {
         Sale AddSale(Sale sale);
         Sale GetSaleByID(string SaleID);
+        bool RemoveSale(Sale sale);        
     }
 }

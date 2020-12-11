@@ -52,8 +52,23 @@ namespace SqlAdapter
                 DateOfSale = sale.DateOfSale,
                 SaleStatus = sale.SaleStatus
             };
+            _context.SaveChanges();
 
             return response;
+        }
+
+        public bool RemoveSale(Sale sale)
+        {
+            _context.Salesman.Remove(sale.Salesman);
+            _context.SaveChanges();
+
+            _context.Items.RemoveRange(sale.Items);
+            _context.SaveChanges();
+
+            _context.Sales.Remove(sale);
+            _context.SaveChanges();
+
+            return true;
         }
     }
 }

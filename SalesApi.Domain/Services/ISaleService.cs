@@ -6,5 +6,6 @@ namespace SalesApi.Domain.Services
     {
         Sale RegisterSale(Sale sale);
         Sale SearchSale(string ID);
+        Sale UpdateStatusSale(string ID, SaleStatus status);
     }
 }

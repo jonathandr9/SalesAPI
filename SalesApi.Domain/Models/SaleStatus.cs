@@ -2,9 +2,10 @@
 {
     public enum SaleStatus
     {
-        PagamentoAprovado = 0,
-        EnviadoParaTransportadora = 1,
-        Entregue = 2,
-        Cancelada = 3
+        AguardandoPagamento = 0,
+        PagamentoAprovado = 1,
+        EnviadoParaTransportadora = 2,
+        Entregue = 3,
+        Cancelada = 4
     }
 }

@@ -9,15 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Core", "0.Core", "{E40653
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Infra", "1.Infra", "{01C1362C-CCD1-4F8B-9134-775BA5CB62CA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Core", "3.Core", "{015D8DFB-3B17-4C2B-A5D0-86ECCBC8ABD8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Presentation", "3.Presentation", "{015D8DFB-3B17-4C2B-A5D0-86ECCBC8ABD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesApi.Application", "SalesApi.Application\SalesApi.Application.csproj", "{92E1240A-57FC-4601-9BB8-BF2EA73B55EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesApi.Application", "SalesApi.Application\SalesApi.Application.csproj", "{92E1240A-57FC-4601-9BB8-BF2EA73B55EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesApi.Domain", "SalesApi.Domain\SalesApi.Domain.csproj", "{32A02498-D5A6-47C0-BE59-37A7042FB966}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesApi.Domain", "SalesApi.Domain\SalesApi.Domain.csproj", "{32A02498-D5A6-47C0-BE59-37A7042FB966}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesApi.Tests", "SalesApi.Tests\SalesApi.Tests.csproj", "{EDFEA023-4C6D-4615-8539-B555705D59C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesApi.Tests", "SalesApi.Tests\SalesApi.Tests.csproj", "{EDFEA023-4C6D-4615-8539-B555705D59C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlAdapter", "SqlAdapter\SqlAdapter.csproj", "{A621B8F5-79B8-4F61-9DFA-AB8ECDBA0A8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlAdapter", "SqlAdapter\SqlAdapter.csproj", "{A621B8F5-79B8-4F61-9DFA-AB8ECDBA0A8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
