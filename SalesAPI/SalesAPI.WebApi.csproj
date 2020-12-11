@@ -5,8 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Dto\" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SalesApi.Application\SalesApi.Application.csproj" />
+    <ProjectReference Include="..\SalesApi.Domain\SalesApi.Domain.csproj" />
+    <ProjectReference Include="..\SqlAdapter\SqlAdapter.csproj" />
   </ItemGroup>
 
 

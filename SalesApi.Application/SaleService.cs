@@ -14,7 +14,7 @@ namespace SalesApi.Application
             _salesSqlAdapter = salesSqlAdapter;
         }
 
-        public void RegisterSale(Sale sale)
+        public Sale RegisterSale(Sale sale)
         {
             if (!Utils.IsAny(sale.Items))
                 throw new Exception("Não é possível adicionar uma venda sem itens");
@@ -22,7 +22,12 @@ namespace SalesApi.Application
             if (sale.Salesman == null)
                 throw new Exception("Não é possível adicionar uma venda sem os dados do vendedor");
 
-            _salesSqlAdapter.AddSale(sale);
+            return _salesSqlAdapter.AddSale(sale);
+        }
+
+        public Sale SearchSale(string ID)
+        {
+            return _salesSqlAdapter.GetSaleByID(ID);
         }
     }
 }

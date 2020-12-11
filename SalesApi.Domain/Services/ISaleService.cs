@@ -4,6 +4,7 @@ namespace SalesApi.Domain.Services
 {
     public interface ISaleService
     {
-        void RegisterSale(Sale sale); 
+        Sale RegisterSale(Sale sale);
+        Sale SearchSale(string ID);
     }
 }

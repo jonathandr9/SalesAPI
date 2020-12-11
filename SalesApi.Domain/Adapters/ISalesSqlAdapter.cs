@@ -4,6 +4,7 @@ namespace SalesApi.Domain.Adapters
 {
     public interface ISalesSqlAdapter
     {
-        void AddSale(Sale sale);
+        Sale AddSale(Sale sale);
+        Sale GetSaleByID(string SaleID);
     }
 }

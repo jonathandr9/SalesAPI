@@ -1,8 +1,11 @@
-﻿namespace SalesApi.Domain.Models
+﻿using System;
+
+namespace SalesApi.Domain.Models
 {
     public class Salesman
     {
-        public int SalesmanID { get; set; }
+        public Guid SalesmanID { get; private set; } = Guid.NewGuid();
+        public Guid SaleID { get; set; }
         public string Cpf { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
