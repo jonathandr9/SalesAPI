@@ -1,6 +1,7 @@
 ﻿using SalesApi.Domain.Adapters;
 using SalesApi.Domain.Context;
 using SalesApi.Domain.Models;
+using System;
 using System.Linq;
 
 namespace SqlAdapter
@@ -57,15 +58,12 @@ namespace SqlAdapter
             return response;
         }
 
-        public bool RemoveSale(Sale sale)
-        {
-            _context.Salesman.Remove(sale.Salesman);
-            _context.SaveChanges();
+        public bool RemoveSale(Guid saleID)
+        {            
+            var saleItemToRemove = 
+                _context.Sales.SingleOrDefault(x => x.SaleID == saleID);
 
-            _context.Items.RemoveRange(sale.Items);
-            _context.SaveChanges();
-
-            _context.Sales.Remove(sale);
+            _context.Sales.Remove(saleItemToRemove);
             _context.SaveChanges();
 
             return true;

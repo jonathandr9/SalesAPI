@@ -1,4 +1,5 @@
 ﻿using SalesApi.Domain.Models;
+using System;
 
 namespace SalesApi.Domain.Adapters
 {
@@ -6,6 +7,6 @@ namespace SalesApi.Domain.Adapters
     {
         Sale AddSale(Sale sale);
         Sale GetSaleByID(string SaleID);
-        bool RemoveSale(Sale sale);        
+        bool RemoveSale(Guid saleID);        
     }
 }

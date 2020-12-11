@@ -40,7 +40,7 @@ namespace SalesApi.Application
             if (! checkStatusInUpdate(originalSale, status))
                 throw new Exception("Status inválido");
 
-            _salesSqlAdapter.RemoveSale(originalSale);
+            _salesSqlAdapter.RemoveSale(originalSale.SaleID);
             originalSale.SaleStatus = status;            
 
             return  _salesSqlAdapter.AddSale(originalSale);
